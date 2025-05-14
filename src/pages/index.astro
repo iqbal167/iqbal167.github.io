@@ -25,40 +25,52 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        Hello, I am {SITE.author.split(" ")[1]}
       </h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
 
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+      <p class="mt-4">
+        I’m a Backend-focused Software Engineer passionate about building
+        cloud-native, resilient, and observable distributed systems. I
+        specialize in <strong>Golang</strong>, and bring additional experience
+        with <strong>Node.js</strong> and <strong>Python</strong>. I’m
+        well-versed in containerized deployments using <strong>Docker</strong> and
+        leverage observability tools like <strong>OpenTelemetry</strong>,
+        <strong>Grafana</strong>, and <strong>Prometheus</strong> to maintain system
+        reliability.
       </p>
+
       <p class="mt-2">
-        Read the blog posts or check
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+        I care deeply about interoperable systems, clean architecture, and
+        bringing clarity to complex backend challenges. Always learning, always
+        improving — and always looking to build meaningful technology that
+        scales.
       </p>
+
+      <div class="mt-4 flex flex-wrap items-center space-x-3">
+        <a
+          target="_blank"
+          href="https://github.com/iqbal167"
+          class="inline-block underline decoration-dashed underline-offset-4 hover:text-accent"
+        >
+          GitHub
+        </a>
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="inline-block"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <IconRss
+            width={20}
+            height={20}
+            class="scale-125 stroke-accent stroke-3"
+          />
+          <span class="sr-only">RSS Feed</span>
+        </a>
+      </div>
+
       {
-        // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
             <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
