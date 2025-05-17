@@ -1,36 +1,23 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "About Me"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+<div class="prose prose-invert dark:prose-invert max-w-3xl mx-auto">
+  <img src="/dev.svg" class="w-full sm:w-2/5 mx-auto mb-8" alt="coding dev illustration">
+  
+  <p class="text-lg leading-relaxed mb-6">
+    I'm a Backend-focused Software Engineer passionate about building
+    cloud-native, resilient, and observable distributed systems. I specialize in
+    <strong>Golang</strong>, and bring additional experience with <strong>Node.js</strong> and
+    <strong>Python</strong>. I'm well-versed in containerized deployments using
+    <strong>Docker</strong>, and leverage observability tools like <strong>OpenTelemetry</strong>,
+    <strong>Grafana</strong>, and <strong>Prometheus</strong> to maintain system reliability.
+  </p>
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
-<div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <p class="text-lg leading-relaxed">
+    I care deeply about interoperable systems, clean architecture, and bringing
+    clarity to complex backend challenges. Always learning, always improving —
+    and always looking to build meaningful technology that scales.
+  </p>
 </div>
-
-## Tech Stack
-
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
